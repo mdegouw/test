@@ -1,0 +1,11 @@
+language: java
+dist: trusty
+
+addons:
+  sonarcloud:
+    organization: mdegouw-github
+    token:
+      secure: SONAR_TOKEN
+
+script:
+  - sonar-scanner
